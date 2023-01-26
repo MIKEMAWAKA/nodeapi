@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { boolean } = require('webidl-conversions');
+
 
 const productSchema = new mongoose.Schema({
     title:{type:String,required:true ,unique:true},
@@ -16,4 +16,4 @@ const productSchema = new mongoose.Schema({
 
 );
 
-module.exports = mongoose.model("User",productSchema);
+module.exports = mongoose.model("Product",productSchema);

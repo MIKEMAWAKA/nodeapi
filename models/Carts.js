@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { boolean } = require('webidl-conversions');
+
 
 const cartSchema = new mongoose.Schema({
     userId:{type:String,required:true },
@@ -20,4 +20,4 @@ const cartSchema = new mongoose.Schema({
 
 );
 
-module.exports = mongoose.model("User",cartSchema);
+module.exports = mongoose.model("Cart",cartSchema);

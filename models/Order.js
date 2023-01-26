@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { boolean } = require('webidl-conversions');
+
 
 const orderSchema = new mongoose.Schema({
     userId:{type:String,required:true },
@@ -25,4 +25,4 @@ const orderSchema = new mongoose.Schema({
 
 );
 
-module.exports = mongoose.model("User",orderSchema);
+module.exports = mongoose.model("Order",orderSchema);
